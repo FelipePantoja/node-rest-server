@@ -14,7 +14,7 @@ app.get('/usuario', function(req, res) {
     res.json('get Usuario')
 })
 
-app.post('/usuario/:id', function(req, res) {
+app.post('/usuario', function(req, res) {
     let body = req.body;
 
     if (body.nombre === undefined) {
